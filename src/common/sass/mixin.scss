@@ -1,0 +1,142 @@
+@mixin bg{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+@mixin line-height($h){
+  height: $h;
+  line-height: $h;
+}
+
+@mixin bgc($color){
+  background-color: $color;
+}
+
+
+@mixin transition($prop, $time, $type){
+  -webkit-transition: $prop $time $type;
+  -moz-transition: $prop $time $type;
+  -ms-transition: $prop $time $type;
+  -o-transition: $prop $time $type;
+  transition: $prop $time $type;
+}
+
+
+@mixin full{
+@include scrollBar;
+width: 100%;
+height: 100%;
+overflow: auto;
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 6px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 6px;
+}
+  &::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+  &::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+}
+
+@mixin clear-f{
+  &:after{
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+}
+
+@mixin ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin flex-row-center{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin trans-vertical-center{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: transLateY(-50%);
+  -ms-transform: transLateY(-50%);
+  transform: transLateY(-50%);
+}
+
+@mixin trans-horizontal-center{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: transLateX(-50%);
+  -ms-transform: transLateX(-50%);
+  transform: transLateX(-50%);
+}
+
+@mixin trans-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: transLate(-50%,-50%);
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+@mixin limit-height{
+  height: 100%;
+  overflow: auto;
+}
+
+@mixin border-box{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin position-fill{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.depart-default .ivu-menu-submenu-title{
+  line-height: 25px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+.depart-default .ivu-menu-item{
+  border-left: 1px solid #eee;
+}
+.business-default .ivu-table-fixed-body{
+  overflow: visible;
+}
+.business-default .ivu-table-fixed::before, .ivu-table-fixed-right::before{
+  z-index: 3;
+}
+.ivu-tree ul li{
+  padding: 6px 0;
+}
+.business-default .ivu-table-cell span{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

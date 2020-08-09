@@ -1,0 +1,93 @@
+
+.top-navbar i{
+  display: inline-block;
+  width:20px;
+  height:20px;
+  margin-right: 5px;
+  vertical-align:text-bottom;
+}
+/*.top-navbar .icon-home{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-member{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-serviceitem{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-serviceplan{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-staff{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-system{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-workplan{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-workorder{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-order{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-fwtj{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-health{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-company{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}
+.top-navbar .icon-orgs{
+  background: url("../../static/images/icon/icon-home.png") no-repeat;
+}*/
+//flex相关
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+//margin bottom
+.mb20{
+  margin-bottom: 20px;
+}
+.mt20{
+  margin-top: 20px;
+}
+.ml20{
+  margin-left: 20px;
+}
+.mr20{
+  margin-right: 20px;
+}
+.m20{
+  margin: 20px;
+}
+.pb20{
+  padding-bottom: 20px;
+}
+.pt20{
+  margin-top: 20px;
+}
+.pl20{
+  margin-left: 20px;
+}
+.pr20{
+  margin-right: 20px;
+}
+.p20{
+  padding: 20px;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.el-drawer{
+overflow-x: hidden;
+overflow-y: auto;
+}

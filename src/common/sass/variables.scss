@@ -1,0 +1,61 @@
+
+// bgc
+$default-page-bgc: #f0f2f5;
+$detail-page-bgc: #f0f2f5;
+$header-bgc: #fff;
+$highlight-bgc: #ebf7ff;
+$bgc: #f5f7f9;
+$mask-bgc: rgba(0, 0, 0, 0.6);
+
+
+// color
+$default-primary-color: #2c8bef;
+$error-color: #ed3f14;
+$success-color: #0dad44;
+$won-primary-color: #ff9900;
+$won-tips-color: #999;
+$field-font-color: #c5931c;
+$disable-font-color: #bbbec4;
+$disable-border-color: #dddee1;
+$disable-background-color: #f7f7f7;
+$border-color: #dddee1;
+$menu-color: hsla(0,0%,100%,.7);
+$hr-color: #e0e0e0;
+$loading-mask-bgc: rgba(255, 255, 255, 0.8); // loading 遮罩背景色
+$detail-header-bgc: #ececec; // 列表右边详情模块头部操作栏背景色
+$key-color: #566d8e; // 详情信息栏 key: value key 的颜色
+
+
+
+
+// width & height
+$content-min-width: 1050px; // 内容区域最小宽度
+$min-width: 1200px; // 最小宽度
+$defaultPage-list-width: 54%; // 各个模块默认列表页面,列表模块宽度
+$defaultPage-detail-width: 45%; // 各个模块默认列表页面,详情模块宽度
+$select-width: 220px;   // defaultPage 页面选择框长度
+$input-width: 220px;   // defaultPage 页面输入框长度
+$layout-min-width: 1200px;
+$header-height: 50px;
+$breadcrumb-height: 50px;
+$content-height: calc(100% - #{$header-height});
+$operation-height: 60px;  // 固定在编辑页面底部的操作栏高度
+$detail-header-height: 60px; // 列表右边详情模块头部操作栏高度
+
+
+// margin
+$selection-margin: 10px; // 列表页面头部操作栏 margin
+$page-margin: 14px;
+$module-margin: 10px;
+$paragraph-margin: 10px;
+
+
+// padding
+$selection-padding: 20px; // 列表页面头部操作栏 padding
+$content-padding: 20px; // 内容页面 padding 值
+$content-padding-horizontal: 20px;
+$content-padding-vertical: 0;
+
+
+// font-size
+$font-size-default: 14px;
